@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-text-color:#183b56;
+    --secondry-text-cokor:#577592;
+    --accent-color-dark:#2294ed;
+    --padding-inline-section:25px;
+    --margin:20px;
+}
+
+body{
+   font-family:'Poppins', sans-serif;
+   color: var(--primary-text-color);
+   
+}
+
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.40rem;
+}
+h4{
+
+    color: #577592;
+}
+p{
+    font-size: 1.25rem;
+    font-family:'Poppins', sans-serif;
+    color: var(--secondry-text-cokor);
+    line-height: 1.8rem;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: orangered;
+    transition: 0.5s;
+}
+i{ 
+    height: 30px;
+    width: 30px;
+    background-color: orange;
+    text-align: center;
+   padding-top: 5px;
+
+}
+
+.main-container{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*-----nav1 start---------*/
+
+.nav1{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding-bottom: var(--padding-inline-section);
+    padding-top: var(--padding-inline-section);
+    height: 60px;
+    margin-bottom:var(--margin) ;
+    align-items: center;
+    border-bottom: 1px solid orangered;
+}
+/*-----nav2 start---------*/
+.nav2{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding-bottom: var(--padding-inline-section);
+    height: 60px;
+    margin-bottom:var(--margin) ;
+    align-items: center;
+  
+}
+/*-----hero-section---------*/
+
+.hero-section{
+    height:450px ;
+    background-image: url(https://images.pexels.com/photos/1959853/pexels-photo-1959853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    text-align: center;
+    object-fit: cover;
+    opacity: 0.3 black;
+}
+.hero-section p{
+    padding-top: 40px;
+    color: rgb(250, 130, 86);
+
+}
+.hero-section h1{
+color: orange;
+}
+
+
+/*-----Top-trands-section---------*/
+.top-tands1{
+
+    text-align: center;
+    margin-top: var(--margin);
+
+}
+
+.top-tands2{
+    margin-top: var(--margin);
+    display: flex;
+    gap: 10px;
+    text-align: center;
+
+}
+.top-tands2 a{
+    height: 200px;
+    width: 300px;
+   
+}
+
+.top-tands2 a :hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.top-tands2 img{
+    height: 120px;
+    width:120px;  
+}
+
+.top-tands2 a i{
+    background: none;
+    color:yellow;
+ 
+}
+
+
+/*--------------dropdown section------------*/
+.dropdown {
+    text-align: right;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: end;
+ 
+   
+}
+.dropdown a{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 20px;
+}
+.parant{
+    margin-left: 0px;
+    top: 20px;
+    position: relative;
+
+}
+.child {
+    margin-top: 0px;
+    position: absolute; 
+    margin-left: 20px;
+    display: none;
+ 
+}
+
+.child a{
+    padding: 20px;
+    display: block;
+    color: aliceblue;
+    background-color:orange;
+    text-align: center;
+ 
+}
+.child a:hover{
+    background-color: orangered;
+}
+.dropdown .main:hover .child {
+   
+    display: block;
+   
+   
+}
+
+
+
+
